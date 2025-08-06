@@ -2,9 +2,9 @@ import streamlit as st
 import numpy as np
 import joblib
 
-# Load the pre-trained model
+
 def load_model():
-    model = joblib.load('diabetes.pkl')  # Make sure this file exists in your working directory
+    model = joblib.load('diabetes.pkl')  
     return model
 
 model = load_model()
@@ -19,7 +19,7 @@ st.set_page_config(
     layout="wide"
 )
 
-# -- Professional, theme-adaptive CSS --
+
 st.markdown("""
 <style>
 .stApp {
@@ -94,7 +94,7 @@ with cols[0]:
     )
     st.markdown('<div style="height:32vh;"></div>', unsafe_allow_html=True)
 
-# --- Center: All questions/inputs grouped in cards ---
+
 with cols[1]:
     # Personal Details
 
@@ -165,8 +165,7 @@ with cols[1]:
             unsafe_allow_html=True
         )
 
-        st.markdown('<div class="section-title">MODEL INPUT ARRAY</div>', unsafe_allow_html=True)
-        st.code(str(answers), language="python")
+        
 
 # --- Right Medical Image ---
 with cols[2]:
