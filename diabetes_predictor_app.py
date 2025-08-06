@@ -171,8 +171,7 @@ with cols[1]:
 with cols[2]:
     st.image(
         "https://images.unsplash.com/photo-1511174511562-5f7f18b874f8?auto=format&fit=crop&w=500&q=80",
-        use_container_width=True,
-        caption="Modern Diagnostics"
+        use_container_width=True
     )
     st.markdown('<div style="height:32vh;"></div>', unsafe_allow_html=True)
 
@@ -180,3 +179,4 @@ st.markdown(
     "<center><small>This dashboard is for demonstration purposes only.<br>For medical advice, consult a qualified healthcare professional.</small></center>",
     unsafe_allow_html=True
 )
+
